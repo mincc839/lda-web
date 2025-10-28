@@ -1,0 +1,4 @@
+AUI().ready(function(){$(function(){if($(".lda-faq").length>0){$('<script>').attr('type','application/ld+json').text(JSON.stringify(createFAQjson())).appendTo('body');}});})
+function createFAQjson(){let faqScript={}
+faqScript["@context"]="https://schema.org";faqScript["@type"]="FAQPage";faqScript["mainEntity"]=[];$(".lda-faq").each(function(){let faqTitle=$(this).find(".lda-faq-title").text().replace(/\s+/g," ").trim();let faqText=$(this).find(".lda-faq-txt").text().replace(/\s+/g," ").trim();let item={}
+item["@type"]="Question";item["name"]=faqTitle;item["acceptedAnswer"]={["@type"]:["Answer"],["text"]:faqText};faqScript["mainEntity"].push(item);});return faqScript;}
