@@ -27,6 +27,34 @@
 <link class="lfr-css-file" data-senna-track="temporary" href="css/clay.css" id="liferayAUICSS" rel="stylesheet" type="text/css">
 <link href="css/combo.css" rel="stylesheet" type="text/css" data-senna-track="temporary" id="e0d507be">
 
+<!-- PRUEBA de implementacion de webmessaging (lab minsait) deploymentId: '32423072-dbe4-4eeb-9971-db3d7dfae0fe' -->
+<script type="text/javascript" charset="utf-8">	
+  (function (g, e, n, es, ys) {
+    g['_genesysJs'] = e;
+    g[e] = g[e] || function () {
+      (g[e].q = g[e].q || []).push(arguments)
+    };
+    g[e].t = 1 * new Date();
+    g[e].c = es;
+    ys = document.createElement('script'); ys.async = 1; ys.src = n; ys.charset = 'utf-8'; document.head.appendChild(ys);
+  })(window, 'Genesys', 'https://apps.mypurecloud.ie/genesys-bootstrap/genesys.min.js', {
+    environment: 'euw1',
+    deploymentId: '32423072-dbe4-4eeb-9971-db3d7dfae0fe'
+  });	
+
+  //var firstName = document.getElementById('first-name').value;	
+	var firstName = 'Claudia';	
+  Genesys("command", "Database.set", {
+	  messaging: {
+		customAttributes: {
+			websiteOrigin: 'aochoavidaur.github.io/demoWM/',
+			customerName: firstName,
+		}
+	  }	
+  });
+	
+</script>	
+
 <script data-senna-track="temporary">
 	// <![CDATA[
 		var Liferay = Liferay || {};
@@ -2832,7 +2860,7 @@ Elige el Seguro de Salud que mejor se adapta a ti.
 Seguro de Salud desde 19,90€/mes y sin copagos
 </div>
 <div class="low-3">
-<span id="cke_bm_109S" style="display: none;"><span id="cke_bm_73S" style="display: none;">�</span>�</span><img alt="" src="images/star-rating-svg.svg">Únete a los más de 3.400.000 clientes que ya confían en Línea Directa.
+<span id="cke_bm_109S" style="display: none;"><span id="cke_bm_73S" style="display: none;">�</span>�</span><img alt="" src="images/star-rating-svg.svg">Únete a los más de 3.400.000 clientes que ya confían en Línea Directa.
 </div>
 </div> </a>
 <div class="lda-content-bottom d-flex flex-column">
@@ -2949,10 +2977,10 @@ const VideoList1462245 = document.querySelectorAll('.contvideo');
 <h3>Seguro de Salud desde 19,90€/mes y sin copagos</h3>
 </div>
 <div class="lda-lps__description low-4 border-0 m-0 p-0 text-left color-content-mid">
-<span id="cke_bm_109S" style="display: none;">�</span><img alt="" src="images/star-rating-svg.svg">Únete a los más de 3.400.000 clientes que ya confían en Línea Directa.
+<span id="cke_bm_109S" style="display: none;">�</span><img alt="" src="images/star-rating-svg.svg">Únete a los más de 3.400.000 clientes que ya confían en Línea Directa.
 </div>
 </div>
-<div class="lda-lps__banner--buttons lda-lps__banner--video--buttons flex-column-reverse flex-sm-row flex-lg-column-reverse  justify-content-center justify-content-lg-start align-items-lg-start align-items-center mt-5 mt-sm-9"><a id="link-btn-02" onclick="sendEventDesdeFragmentoHome('Home', 'calcular_precio', 'salud25', 'Calcular_precio'); " href="/presupuesto/seguro_salud.init.faces?from=B009975" target="_self" title="Calcula tu Seguro de Salud" class="lda-btn lda-action-button  lda-btn--white lda-btn--primary gap-1  lda-btn--action-button-icon lda-btn__max-width-488"> <img aria-hidden="true" data-lfr-editable-id="lda-card-img-02" data-lfr-editable-type="image" loading="lazy" width="24" height="24" data-fileentryid="128547" src="images/poliza-salud-1.svg"> <span data-lfr-editable-type="rich-text" data-lfr-editable-id="textoButton2"><span id="cke_bm_109S" style="display: none;">�</span>Calcula tu seguro</span> </a>
+<div class="lda-lps__banner--buttons lda-lps__banner--video--buttons flex-column-reverse flex-sm-row flex-lg-column-reverse  justify-content-center justify-content-lg-start align-items-lg-start align-items-center mt-5 mt-sm-9"><a id="link-btn-02" onclick="sendEventDesdeFragmentoHome('Home', 'calcular_precio', 'salud25', 'Calcular_precio'); " href="/presupuesto/seguro_salud.init.faces?from=B009975" target="_self" title="Calcula tu Seguro de Salud" class="lda-btn lda-action-button  lda-btn--white lda-btn--primary gap-1  lda-btn--action-button-icon lda-btn__max-width-488"> <img aria-hidden="true" data-lfr-editable-id="lda-card-img-02" data-lfr-editable-type="image" loading="lazy" width="24" height="24" data-fileentryid="128547" src="images/poliza-salud-1.svg"> <span data-lfr-editable-type="rich-text" data-lfr-editable-id="textoButton2"><span id="cke_bm_109S" style="display: none;">�</span>Calcula tu seguro</span> </a>
 </div>
 </div>
 </div>
@@ -3505,7 +3533,7 @@ const VideoList333786 = document.querySelectorAll('.contvideo');
 <p class="high-2 pb-1" data-lfr-editable-id="titleQR" data-lfr-editable-type="rich-text"></p>
 <h3>¡Descárgate la App de Línea Directa!</h3>
 <p></p>
-<p id="bloque-descripcion-descargar-qr-home" class="low-3 color-content-mid d-sm-flex mr-3" data-lfr-editable-id="idDescriptionQR" data-lfr-editable-type="rich-text">Escanea este QR con tu dispositivo móvil y te redirigiremos a la store�correspondiente.</p>
+<p id="bloque-descripcion-descargar-qr-home" class="low-3 color-content-mid d-sm-flex mr-3" data-lfr-editable-id="idDescriptionQR" data-lfr-editable-type="rich-text">Escanea este QR con tu dispositivo móvil y te redirigiremos a la store�correspondiente.</p>
 </div>
 </div>
 <div id="bloque-apps-descargar-qr-home" class="lda-texto-descargar-app__icons align-items-center d-flex flex-sm-row flex-column mt-6 mt-lg-0"><a id="app-ios-descargar-qr-home" onclick="sendEventDesdeFragmentoHome('Home', 'Descarga_apps', 'Descarga_Apple', 'descarga_apple')" class="d-inline-block mr-sm-1 mb-sm-0 mb-4" title="Descargar aplicación Línea Directa para iPhone" target="_blank" href="https://apps.apple.com/es/app/apple-store/id444703674?pt=594854&ct=lda_web_apps&mt=8"> <img aria-hidden="false" loading="lazy" width="160" height="48" alt="Descargar aplicación Línea Directa para iPhone" class="lda-texto-descargar-app__icon" id="lda-texto-descargar-app__apple" src="images/applestore.svg"> </a> <a id="app-android-descargar-qr-home" onclick="sendEventDesdeFragmentoHome('Home', 'Descarga_apps', 'Descarga_Android', 'descarga_android')" class="d-inline-block mr-sm-1 mb-sm-0 mb-4" title="Descargar aplicación Línea Directa para Android" target="_blank" href="https://play.google.com/store/apps/details?id=linea.directa&referrer=utm_source%3Ddigitalizacion%26utm_medium%3Dweb%26utm_campaign%3Dlda_web_apps"> <img aria-hidden="false" loading="lazy" width="160" height="48" alt="Descargar aplicación Línea Directa para Android" class="lda-texto-descargar-app__icon" id="lda-texto-descargar-app__google" src="images/googleplay.svg"> </a> <a id="app-huawei-descargar-qr-home" onclick="sendEventDesdeFragmentoHome('Home', 'Descarga_apps', 'Descarga_Huawei', 'descarga_huawei')" class="d-inline-block mb-sm-0 mb-3" title="Descargar aplicación Línea Directa para Huawei" target="_blank" href="https://appgallery.huawei.com/#/app/C104062445"> <img aria-hidden="false" loading="lazy" width="160" height="48" alt="Descargar aplicación Línea Directa para Huawei" class="lda-texto-descargar-app__icon" id="lda-texto-descargar-app__huawei" src="images/huawei.svg"> </a>
@@ -3562,8 +3590,8 @@ if (isMobile) {
 </div>
 <div class="low-3">
 <ul>
-<li><strong>Ahorra en la renovación</strong>�de tu seguro o en tus nuevas contrataciones.</li>
-<li><strong>Beneficios y descuentos en más de 30 marcas TOP</strong>�de tu confianza con las que puedes ahorrar: viajes, espectáculos, tecnología, moda…</li>
+<li><strong>Ahorra en la renovación</strong>�de tu seguro o en tus nuevas contrataciones.</li>
+<li><strong>Beneficios y descuentos en más de 30 marcas TOP</strong>�de tu confianza con las que puedes ahorrar: viajes, espectáculos, tecnología, moda…</li>
 <li><strong>Y solo por ser nuestro cliente.</strong></li>
 </ul>
 </div>
@@ -3660,7 +3688,7 @@ $(elem).each(function (i) {
 <h3>¿Por qué debes cambiarte a Línea Directa?</h3>
 </div>
 <div class="lda-centered-title__description" data-lfr-editable-id="lda-subtitulo-container-rounded1" data-lfr-editable-type="rich-text">
-�Porque somos especialistas en Seguros de Coche, Moto, Hogar,��<br> Vehículos Profesionales, Salud, Movilidad Personal, Ocupación ilegal, Mascotas y Multirriesgo Negocios.�
+�Porque somos especialistas en Seguros de Coche, Moto, Hogar,��<br> Vehículos Profesionales, Salud, Movilidad Personal, Ocupación ilegal, Mascotas y Multirriesgo Negocios.�
 </div>
 </div>
 <div class="lda-card-red border-radius-l w-100 d-flex flex-lg-row flex-column text-center align-items-top justify-content-between">
@@ -3920,7 +3948,7 @@ Sí, la placa vitrocerámica siempre queda cubierta.
 <div class="lda-content-text lda-content-text-zqkr">
 <div>
 <div style="text-align:center">
-<span class="text-dark">¿Tienes más dudas?</span>�<span class="text-danger"><a href="/preguntas-frecuentes.html">Visita nuestras preguntas frecuentes</a></span>
+<span class="text-dark">¿Tienes más dudas?</span>�<span class="text-danger"><a href="/preguntas-frecuentes.html">Visita nuestras preguntas frecuentes</a></span>
 </div>
 </div>
 </div>
@@ -4303,7 +4331,7 @@ El valor de ser directo.	</p>
 <div class="portlet-body">
 <div class="" data-fragments-editor-item-id="40008-46906" data-fragments-editor-item-type="fragments-editor-mapped-item">
 <div class="journal-content-article " data-analytics-asset-id="49483" data-analytics-asset-title="Footer - Copyright" data-analytics-asset-type="web-content" data-analytics-web-content-resource-pk="46906">
-<p>© Línea Directa Aseguradora, S.A.�</p>
+<p>© Línea Directa Aseguradora, S.A.�</p>
 </div>
 </div>
 </div>
@@ -4330,7 +4358,7 @@ El valor de ser directo.	</p>
 <div class="portlet-body">
 <div class="" data-fragments-editor-item-id="40008-46886" data-fragments-editor-item-type="fragments-editor-mapped-item">
 <div class="journal-content-article " data-analytics-asset-id="49459" data-analytics-asset-title="Footer - Redes sociales" data-analytics-asset-type="web-content" data-analytics-web-content-resource-pk="46886">
-<p>Síguenos en:�� <span contenteditable="false" tabindex="-1"><a class="redesSociales" data-widget="image" href="/contactar/redes-sociales.html" target="_blank" title="Redes sociales de Línea Directa"><img alt="TikTok" height="20" src="images/tiktok-svg.svg" style="margin: 0px;" width="18"></a></span>� <span contenteditable="false" tabindex="-1"><a class="redesSociales" data-widget="image" href="/contactar/redes-sociales.html" target="_blank" title="Redes sociales de Línea Directa"><img alt="Twitter" height="24" src="images/twitter-svg.svg" style="margin: 0px;" width="24"></a></span>� <span contenteditable="false" tabindex="-1"><a class="redesSociales" data-widget="image" href="/contactar/redes-sociales.html" target="_blank" title="Redes sociales de Línea Directa"><img alt="Youtube" height="24" src="images/youtube-svg.svg" style="margin: 0px;" width="24"></a></span>� <span contenteditable="false" tabindex="-1"><a class="redesSociales" data-widget="image" href="/contactar/redes-sociales.html" target="_blank" title="Redes sociales de Línea Directa"><img alt="Facebook" height="24" src="images/facebook-svg.svg" style="margin: 0px;" width="24"></a></span>� <span contenteditable="false" tabindex="-1"><a class="redesSociales" data-widget="image" href="/contactar/redes-sociales.html" target="_blank" title="Redes sociales de Línea Directa"><img alt="Linkedin" height="24" src="images/linkedin-svg.svg" style="margin: 0px;" width="24"></a></span></p>
+<p>Síguenos en:�� <span contenteditable="false" tabindex="-1"><a class="redesSociales" data-widget="image" href="/contactar/redes-sociales.html" target="_blank" title="Redes sociales de Línea Directa"><img alt="TikTok" height="20" src="images/tiktok-svg.svg" style="margin: 0px;" width="18"></a></span>� <span contenteditable="false" tabindex="-1"><a class="redesSociales" data-widget="image" href="/contactar/redes-sociales.html" target="_blank" title="Redes sociales de Línea Directa"><img alt="Twitter" height="24" src="images/twitter-svg.svg" style="margin: 0px;" width="24"></a></span>� <span contenteditable="false" tabindex="-1"><a class="redesSociales" data-widget="image" href="/contactar/redes-sociales.html" target="_blank" title="Redes sociales de Línea Directa"><img alt="Youtube" height="24" src="images/youtube-svg.svg" style="margin: 0px;" width="24"></a></span>� <span contenteditable="false" tabindex="-1"><a class="redesSociales" data-widget="image" href="/contactar/redes-sociales.html" target="_blank" title="Redes sociales de Línea Directa"><img alt="Facebook" height="24" src="images/facebook-svg.svg" style="margin: 0px;" width="24"></a></span>� <span contenteditable="false" tabindex="-1"><a class="redesSociales" data-widget="image" href="/contactar/redes-sociales.html" target="_blank" title="Redes sociales de Línea Directa"><img alt="Linkedin" height="24" src="images/linkedin-svg.svg" style="margin: 0px;" width="24"></a></span></p>
 </div>
 </div>
 </div>
@@ -4678,7 +4706,7 @@ El valor de ser directo.	</p>
 <div class="portlet-body">
 <div class="" data-fragments-editor-item-id="40008-46906" data-fragments-editor-item-type="fragments-editor-mapped-item">
 <div class="journal-content-article " data-analytics-asset-id="49483" data-analytics-asset-title="Footer - Copyright" data-analytics-asset-type="web-content" data-analytics-web-content-resource-pk="46906">
-<p>© Línea Directa Aseguradora, S.A.�</p>
+<p>© Línea Directa Aseguradora, S.A.�</p>
 </div>
 </div>
 </div>
@@ -4705,7 +4733,7 @@ El valor de ser directo.	</p>
 <div class="portlet-body">
 <div class="" data-fragments-editor-item-id="40008-46886" data-fragments-editor-item-type="fragments-editor-mapped-item">
 <div class="journal-content-article " data-analytics-asset-id="49459" data-analytics-asset-title="Footer - Redes sociales" data-analytics-asset-type="web-content" data-analytics-web-content-resource-pk="46886">
-<p>Síguenos en:�� <span contenteditable="false" tabindex="-1"><a class="redesSociales" data-widget="image" href="/contactar/redes-sociales.html" target="_blank" title="Redes sociales de Línea Directa"><img alt="TikTok" height="20" src="images/tiktok-svg.svg" style="margin: 0px;" width="18"></a></span>� <span contenteditable="false" tabindex="-1"><a class="redesSociales" data-widget="image" href="/contactar/redes-sociales.html" target="_blank" title="Redes sociales de Línea Directa"><img alt="Twitter" height="24" src="images/twitter-svg.svg" style="margin: 0px;" width="24"></a></span>� <span contenteditable="false" tabindex="-1"><a class="redesSociales" data-widget="image" href="/contactar/redes-sociales.html" target="_blank" title="Redes sociales de Línea Directa"><img alt="Youtube" height="24" src="images/youtube-svg.svg" style="margin: 0px;" width="24"></a></span>� <span contenteditable="false" tabindex="-1"><a class="redesSociales" data-widget="image" href="/contactar/redes-sociales.html" target="_blank" title="Redes sociales de Línea Directa"><img alt="Facebook" height="24" src="images/facebook-svg.svg" style="margin: 0px;" width="24"></a></span>� <span contenteditable="false" tabindex="-1"><a class="redesSociales" data-widget="image" href="/contactar/redes-sociales.html" target="_blank" title="Redes sociales de Línea Directa"><img alt="Linkedin" height="24" src="images/linkedin-svg.svg" style="margin: 0px;" width="24"></a></span></p>
+<p>Síguenos en:�� <span contenteditable="false" tabindex="-1"><a class="redesSociales" data-widget="image" href="/contactar/redes-sociales.html" target="_blank" title="Redes sociales de Línea Directa"><img alt="TikTok" height="20" src="images/tiktok-svg.svg" style="margin: 0px;" width="18"></a></span>� <span contenteditable="false" tabindex="-1"><a class="redesSociales" data-widget="image" href="/contactar/redes-sociales.html" target="_blank" title="Redes sociales de Línea Directa"><img alt="Twitter" height="24" src="images/twitter-svg.svg" style="margin: 0px;" width="24"></a></span>� <span contenteditable="false" tabindex="-1"><a class="redesSociales" data-widget="image" href="/contactar/redes-sociales.html" target="_blank" title="Redes sociales de Línea Directa"><img alt="Youtube" height="24" src="images/youtube-svg.svg" style="margin: 0px;" width="24"></a></span>� <span contenteditable="false" tabindex="-1"><a class="redesSociales" data-widget="image" href="/contactar/redes-sociales.html" target="_blank" title="Redes sociales de Línea Directa"><img alt="Facebook" height="24" src="images/facebook-svg.svg" style="margin: 0px;" width="24"></a></span>� <span contenteditable="false" tabindex="-1"><a class="redesSociales" data-widget="image" href="/contactar/redes-sociales.html" target="_blank" title="Redes sociales de Línea Directa"><img alt="Linkedin" height="24" src="images/linkedin-svg.svg" style="margin: 0px;" width="24"></a></span></p>
 </div>
 </div>
 </div>
@@ -5053,7 +5081,7 @@ El valor de ser directo.	</p>
 <div class="portlet-body">
 <div class="" data-fragments-editor-item-id="40008-46906" data-fragments-editor-item-type="fragments-editor-mapped-item">
 <div class="journal-content-article " data-analytics-asset-id="49483" data-analytics-asset-title="Footer - Copyright" data-analytics-asset-type="web-content" data-analytics-web-content-resource-pk="46906">
-<p>© Línea Directa Aseguradora, S.A.�</p>
+<p>© Línea Directa Aseguradora, S.A.�</p>
 </div>
 </div>
 </div>
@@ -5080,7 +5108,7 @@ El valor de ser directo.	</p>
 <div class="portlet-body">
 <div class="" data-fragments-editor-item-id="40008-46886" data-fragments-editor-item-type="fragments-editor-mapped-item">
 <div class="journal-content-article " data-analytics-asset-id="49459" data-analytics-asset-title="Footer - Redes sociales" data-analytics-asset-type="web-content" data-analytics-web-content-resource-pk="46886">
-<p>Síguenos en:�� <span contenteditable="false" tabindex="-1"><a class="redesSociales" data-widget="image" href="/contactar/redes-sociales.html" target="_blank" title="Redes sociales de Línea Directa"><img alt="TikTok" height="20" src="images/tiktok-svg.svg" style="margin: 0px;" width="18"></a></span>� <span contenteditable="false" tabindex="-1"><a class="redesSociales" data-widget="image" href="/contactar/redes-sociales.html" target="_blank" title="Redes sociales de Línea Directa"><img alt="Twitter" height="24" src="images/twitter-svg.svg" style="margin: 0px;" width="24"></a></span>� <span contenteditable="false" tabindex="-1"><a class="redesSociales" data-widget="image" href="/contactar/redes-sociales.html" target="_blank" title="Redes sociales de Línea Directa"><img alt="Youtube" height="24" src="images/youtube-svg.svg" style="margin: 0px;" width="24"></a></span>� <span contenteditable="false" tabindex="-1"><a class="redesSociales" data-widget="image" href="/contactar/redes-sociales.html" target="_blank" title="Redes sociales de Línea Directa"><img alt="Facebook" height="24" src="images/facebook-svg.svg" style="margin: 0px;" width="24"></a></span>� <span contenteditable="false" tabindex="-1"><a class="redesSociales" data-widget="image" href="/contactar/redes-sociales.html" target="_blank" title="Redes sociales de Línea Directa"><img alt="Linkedin" height="24" src="images/linkedin-svg.svg" style="margin: 0px;" width="24"></a></span></p>
+<p>Síguenos en:�� <span contenteditable="false" tabindex="-1"><a class="redesSociales" data-widget="image" href="/contactar/redes-sociales.html" target="_blank" title="Redes sociales de Línea Directa"><img alt="TikTok" height="20" src="images/tiktok-svg.svg" style="margin: 0px;" width="18"></a></span>� <span contenteditable="false" tabindex="-1"><a class="redesSociales" data-widget="image" href="/contactar/redes-sociales.html" target="_blank" title="Redes sociales de Línea Directa"><img alt="Twitter" height="24" src="images/twitter-svg.svg" style="margin: 0px;" width="24"></a></span>� <span contenteditable="false" tabindex="-1"><a class="redesSociales" data-widget="image" href="/contactar/redes-sociales.html" target="_blank" title="Redes sociales de Línea Directa"><img alt="Youtube" height="24" src="images/youtube-svg.svg" style="margin: 0px;" width="24"></a></span>� <span contenteditable="false" tabindex="-1"><a class="redesSociales" data-widget="image" href="/contactar/redes-sociales.html" target="_blank" title="Redes sociales de Línea Directa"><img alt="Facebook" height="24" src="images/facebook-svg.svg" style="margin: 0px;" width="24"></a></span>� <span contenteditable="false" tabindex="-1"><a class="redesSociales" data-widget="image" href="/contactar/redes-sociales.html" target="_blank" title="Redes sociales de Línea Directa"><img alt="Linkedin" height="24" src="images/linkedin-svg.svg" style="margin: 0px;" width="24"></a></span></p>
 </div>
 </div>
 </div>
