@@ -27,33 +27,6 @@
 <link class="lfr-css-file" data-senna-track="temporary" href="css/clay.css" id="liferayAUICSS" rel="stylesheet" type="text/css">
 <link href="css/combo.css" rel="stylesheet" type="text/css" data-senna-track="temporary" id="e0d507be">
 
-<!-- PRUEBA de implementacion de webmessaging (lab minsait) deploymentId: '32423072-dbe4-4eeb-9971-db3d7dfae0fe' -->
-<script type="text/javascript" charset="utf-8">	
-  (function (g, e, n, es, ys) {
-    g['_genesysJs'] = e;
-    g[e] = g[e] || function () {
-      (g[e].q = g[e].q || []).push(arguments)
-    };
-    g[e].t = 1 * new Date();
-    g[e].c = es;
-    ys = document.createElement('script'); ys.async = 1; ys.src = n; ys.charset = 'utf-8'; document.head.appendChild(ys);
-  })(window, 'Genesys', 'https://apps.mypurecloud.ie/genesys-bootstrap/genesys.min.js', {
-    environment: 'euw1',
-    deploymentId: '32423072-dbe4-4eeb-9971-db3d7dfae0fe'
-  });	
-
-  //var firstName = document.getElementById('first-name').value;	
-	var firstName = 'Claudia';	
-  Genesys("command", "Database.set", {
-	  messaging: {
-		customAttributes: {
-			websiteOrigin: 'aochoavidaur.github.io/demoWM/',
-			customerName: firstName,
-		}
-	  }	
-  });
-	
-</script>	
 
 <script data-senna-track="temporary">
 	// <![CDATA[
@@ -6943,5 +6916,33 @@ main();
 }
 </script>
 <script type="text/javascript" src="js/_Incapsula_Resource.js" async=""></script>
+
+<!-- PRUEBA de implementacion de webmessaging (lab minsait) deploymentId: '32423072-dbe4-4eeb-9971-db3d7dfae0fe' -->
+<script type="text/javascript" charset="utf-8">	
+  (function (g, e, n, es, ys) {
+    g['_genesysJs'] = e;
+    g[e] = g[e] || function () {
+      (g[e].q = g[e].q || []).push(arguments)
+    };
+    g[e].t = 1 * new Date();
+    g[e].c = es;
+    ys = document.createElement('script'); ys.async = 1; ys.src = n; ys.charset = 'utf-8'; document.head.appendChild(ys);
+  })(window, 'Genesys', 'https://apps.mypurecloud.ie/genesys-bootstrap/genesys.min.js', {
+    environment: 'euw1',
+    deploymentId: '32423072-dbe4-4eeb-9971-db3d7dfae0fe'
+  });	
+
+  //var firstName = document.getElementById('first-name').value;	
+	var firstName = 'Claudia';	
+  Genesys("command", "Database.set", {
+	  messaging: {
+		customAttributes: {
+			websiteOrigin: 'aochoavidaur.github.io/demoWM/',
+			customerName: firstName,
+		}
+	  }	
+  });
+	
+</script>	
 
 </body></html>
